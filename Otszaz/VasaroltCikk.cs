@@ -9,15 +9,15 @@ namespace Otszaz
     class VasaroltCikk
     {
         string cikknev;
-        int ertek;
+        int fizetendo; //-- Eredetileg minde 500, de a kosarban változhat
 
         public VasaroltCikk(string cikknev, int ar)
         {
             this.Cikknev = cikknev;
-            this.ertek = ar;
+            this.fizetendo = ar;
         }
 
         public string Cikknev { get => cikknev; set => cikknev = value; }
-        public int Ertek { get => ertek; set => ertek = value; }
+        public int Ertek { get => fizetendo; set => fizetendo = value; }
     }
 }
